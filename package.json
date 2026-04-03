@@ -1,0 +1,46 @@
+{
+  "name": "auto-organize",
+  "version": "1.0.0",
+  "description": "AI agent for 123云盘 WebDAV access with terminal UI",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppmoon/auto-organize.git"
+  },
+  "keywords": [
+    "webdav",
+    "ai-agent",
+    "terminal-ui",
+    "123cloud"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ppmoon/auto-organize/issues"
+  },
+  "homepage": "https://github.com/ppmoon/auto-organize#readme",
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "ink": "^6.8.0",
+    "openai": "^6.33.0",
+    "puppeteer": "^24.40.0",
+    "react": "^19.2.4",
+    "webdav": "^5.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  },
+  "bin": {
+    "auto-organize": "dist/index.js"
+  }
+}
